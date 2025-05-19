@@ -1,0 +1,98 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5faff;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.grid, .mini-grid {
+  display: grid;
+  gap: 2px;
+}
+
+.grid {
+  grid-template-columns: repeat(10, 30px);
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  background: #e2e8f0;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+}
+
+.cell.filled {
+  background-color: #3b82f6;
+}
+
+.right-panel {
+  max-width: 300px;
+  text-align: left;
+}
+
+#blocks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.mini-grid {
+  grid-template-columns: repeat(5, 20px);
+}
+
+.mini-cell {
+  width: 20px;
+  height: 20px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+}
+
+.mini-cell.filled {
+  background: #4ade80;
+}
+
+button {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #059669;
+}
+
+button.danger {
+  background: #ef4444;
+}
+
+button.danger:hover {
+  background: #dc2626;
+}
+
+#output {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #334155;
+  white-space: pre-line;
+}

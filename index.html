@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solve Block Blast Puzzles in seconds</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🧩 Solve Block Blast Puzzles</h1>
+
+  <div id="container">
+    <div id="grid" class="grid"></div>
+
+    <div class="right-panel">
+      <h2>Available Blocks</h2>
+      <div id="blocks-container"></div>
+
+      <div class="button-group">
+        <button onclick="addBlock()">+ Add Block</button>
+        <button onclick="solve()">🧠 Solve</button>
+        <button onclick="clearAll()" class="danger">🧹 Clear Grid</button>
+      </div>
+
+      <div id="output"></div>
+    </div>
+  </div>
+
+  <script src="solver.js"></script>
+</body>
+</html>
